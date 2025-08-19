@@ -1,0 +1,23 @@
+[
+  { "title": "HTML", "icon": "html5" },
+  { "title": "CSS", "icon": "css" },
+  { "title": "JavaScript", "icon": "javascript" },
+  { "title": "React", "icon": "react" },
+  { "title": "Next.js", "icon": "nextdotjs" },
+  { "title": "Tailwind CSS", "icon": "tailwindcss" },
+  { "title": "PHP", "icon": "php" },
+  { "title": "Python", "icon": "python" },
+  { "title": "Spring Boot", "icon": "springboot" },
+  { "title": "Express.js", "icon": "express" },
+  { "title": "Symfony", "icon": "symfony" },
+  { "title": "Django", "icon": "django" },
+  { "title": "MySQL", "icon": "mysql" },
+  { "title": "PostgreSQL", "icon": "postgresql" },
+  { "title": "GitHub", "icon": "github" },
+  { "title": "Postman", "icon": "postman" },
+  { "title": "Figma", "icon": "figma" },
+  { "title": "Jest", "icon": "jest" },
+  { "title": "Cypress", "icon": "cypress" },
+ { "title": "Docker", "icon": "docker" }
+
+]

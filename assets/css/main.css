@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+:root {
+    --backgroud-color :#1F1B1A ;
+    --primary-color	: #0098CF ;
+    --primary-color-hover :#5dd4ff;
+    --secondary-color : #4b4645;
+  --border-gradient: linear-gradient(to right, #0098CF, #000000); /* Exemple dégradé */
+
+    
+
+}
+
+
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+
+
+    
+
+    @keyframes rotation-reverse {
+      from {
+        transform: rotate(360deg);
+      }
+      to {
+        transform: rotate(0deg);
+      }
+
+    }
+
+
+
+
+a {
+    color: white
+}
+
+a:hover{
+    color : var(--primary-color)
+}
+
+
+.button-blue {
+    background-color: var(--primary-color);
+    padding: 5px;
+    color : white;
+    width: 120px;
+    border-radius: 5px;
+    height: 50px;
+ 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.button-blue:hover {
+    background-color: var(--primary-color-hover);
+}
+
+.cube-rotation {
+      animation: rotation 8s linear infinite;
+
+}
+
+.cube-rotation-reverse {
+      animation: rotation-reverse 8s linear infinite;
+
+}
+
+
+
+.title-bold {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 25px; /* taille par défaut pour mobile */
+}
+
+.title {
+  color: white;
+  font-size: 25px; /* taille par défaut pour mobile */
+}
+
+
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .title-bold {
+    font-size: xx-large;
+  }
+  .title {
+    font-size: xx-large;
+  }
+}
+
+
+
+.text{
+  color : white;
+  font-size:small
+}
