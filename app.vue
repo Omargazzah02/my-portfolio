@@ -17,6 +17,8 @@
 
       <SkillsPage></SkillsPage>
 
+      <ContactPage></ContactPage>
+
   </NuxtLayout>
    </div>
 

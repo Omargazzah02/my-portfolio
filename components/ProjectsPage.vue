@@ -1,5 +1,5 @@
 <template>
-  <h1 class="title-bold"> Mes projets</h1>
+  <h1 class="title-bold text-center"> Mes projets</h1>
   <swiper
     :modules="[Pagination, Navigation]"
     pagination
@@ -9,7 +9,6 @@
     :breakpoints="breakpoints"
     class="my-swiper"
   >
-    <swiper-slide></swiper-slide>
     
     <swiper-slide v-for="project in projects" :key="project.title"> 
       <ProjectCard
@@ -61,7 +60,6 @@ const breakpoints = {
   justify-content: center;
   background: #eee;
   font-size: 24px;
-  border-radius: 10px;
   height: 100%;
 }
 

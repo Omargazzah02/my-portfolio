@@ -1,5 +1,5 @@
 <template class="w-full   ">
-  <h1 class="title-bold text-center mb-8">Compétences techniques</h1>
+  <h1 class="title-bold text-center mb-8">Technologies</h1>
 
   <div
     class="grid grid-cols-3 lg:grid-cols-8 gap-6  w-full"

@@ -5,10 +5,16 @@
     --primary-color	: #0098CF ;
     --primary-color-hover :#5dd4ff;
     --secondary-color : #4b4645;
+    --yellow-color  : #FFDA0B;
   --border-gradient: linear-gradient(to right, #0098CF, #000000); /* Exemple dégradé */
 
     
 
+}
+
+
+body {
+  font-family: "Cascadia Code", monospace;
 }
 
 
@@ -64,6 +70,8 @@ a:hover{
 
 }
 
+
+
 .button-blue:hover {
     background-color: var(--primary-color-hover);
 }
@@ -110,3 +118,7 @@ a:hover{
   color : white;
   font-size:small
 }
+
+
+
+
