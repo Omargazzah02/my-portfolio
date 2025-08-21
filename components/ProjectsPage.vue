@@ -1,9 +1,9 @@
 <template>
-  <h1 class="title-bold text-center"> Mes projets</h1>
+ <div class="lg:px-5">
+   <h1 class="title-bold text-center "> Mes projets</h1>
   <swiper
-    :modules="[Pagination, Navigation]"
+    :modules="[Pagination]"
     pagination
-    navigation
     :space-between="20"
     :slides-per-view="1"
     :breakpoints="breakpoints"
@@ -21,21 +21,19 @@
       />
     </swiper-slide>
   </swiper>
+ </div>
 </template>
 
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination, Navigation } from 'swiper/modules'
+import { Pagination } from 'swiper/modules'
 import projects from '@/data/projects.json'
 
-// Import du CSS nécessaire pour Swiper
 import 'swiper/css'
 import 'swiper/css/pagination'
-import 'swiper/css/navigation'
 
 import ProjectCard from '@/components/utils/ProjectCard.vue'
 
-// Configuration responsive
 const breakpoints = {
   640: {
     slidesPerView: 2,
@@ -49,8 +47,10 @@ const breakpoints = {
 <style scoped>
 .my-swiper {
   width: 100%;
-  height: 300px;
+  height: 350px;
   overflow: hidden;
+  padding-bottom: 50px; /* espace pour les bullets */
+  
 }
 
 /* Slides */
@@ -60,34 +60,31 @@ const breakpoints = {
   justify-content: center;
   background: #eee;
   font-size: 24px;
+  border-radius: 10px;
   height: 100%;
 }
 
-/* Pagination */
-.swiper-pagination {
-  bottom: 10px;
-}
 
-.swiper-pagination-bullet {
-  background: #000;
+
+
+
+
+
+
+/* Bullets inactifs */
+::v-deep(.swiper-pagination-bullet) {
+  background: #fff; /* blanc */
   opacity: 0.5;
+  width: 9px;
+  height: 9px;
+  margin: 0 6px;
 }
 
-.swiper-pagination-bullet-active {
-  background: #0070f3;
+/* Bullet actif */
+::v-deep(.swiper-pagination-bullet-active) {
+  background: #fff; /* blanc */
   opacity: 1;
 }
-
-/* Flèches navigation */
-.swiper-button-prev,
-.swiper-button-next {
-  color: #0070f3; /* bleu */
-  width: 30px;
-  height: 30px;
-}
-
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  font-size: 20px;
-}
 </style>
+
+
