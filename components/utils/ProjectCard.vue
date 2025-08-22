@@ -4,7 +4,7 @@
     <img
       :src="imageUrl"
       alt=""
-      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+      class="w-full h-full transition-transform duration-500 group-hover:scale-105"
     />
 
     <!-- Gradient Overlay -->
@@ -19,30 +19,35 @@
 
       <!-- Description -->
       <p
-        class="text-white text-sm max-lg:text-xs mt-2 overflow-hidden transition-all duration-300"
+        class="text-white text-xs max-lg:text-xs mt-2 overflow-hidden transition-all duration-300"
         :class="expanded ? 'max-h-full' : 'max-h-20'"
       >
         {{ description }}
       </p>
 
-      <!-- Bouton Voir plus / Voir moins -->
-      <button
-        v-if="description.length > 150"
-        @click="expanded = !expanded"
-        class="mt-2 text-blue-400 text-sm hover:underline self-start"
-      >
-        {{ expanded ? 'Voir moins' : 'Voir plus' }}
-      </button>
-
+      
       <!-- Icônes d'action -->
-      <div class="mt-3 flex space-x-4">
-        <a :href="viewUrl" target="_blank" class="text-white hover:text-blue-400 transition-colors duration-300">
-          <font-awesome-icon :icon="['fas', 'eye']" class="text-2xl" />
-        </a>
-        <a :href="githubUrl" target="_blank" class="text-white hover:text-blue-400 transition-colors duration-300">
-          <font-awesome-icon :icon="['fab', 'github']" class="text-2xl" />
-        </a>
-      </div>
+<div class="mt-3 flex space-x-4">
+  <!-- Affiche l'icône seulement si viewUrl existe -->
+  <a
+    v-if="viewUrl"
+    :href="viewUrl"
+    target="_blank"
+    class="text-white hover:text-blue-400 transition-colors duration-300"
+  >
+    <font-awesome-icon :icon="['fas', 'eye']" class="text-2xl" />
+  </a>
+
+  <a
+    v-if="githubUrl"
+    :href="githubUrl"
+    target="_blank"
+    class="text-white hover:text-blue-400 transition-colors duration-300"
+  >
+    <font-awesome-icon :icon="['fab', 'github']" class="text-2xl" />
+  </a>
+</div>
+
     </div>
   </div>
 </template>

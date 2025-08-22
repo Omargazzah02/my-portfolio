@@ -9,6 +9,14 @@
   },
     {
     "id": 1,
+    "title": "TeamTrack",
+    "description": "Plateforme web full stack, intégrant une API sécurisée avec JWT, permettant de gérer des projets collaboratifs. Elle est réalisée en utilisant le stack MEVN." ,
+    "imageUrl": "/images/projects/booknest.png",
+    "githubUrl": "https://github.com/Omargazzah02/TeamTrack"
+  },
+
+    {
+    "id": 2,
     "title": "Hercules Academy",
     "description": "Site vitrine d’une académie de MMA, développé avec Next.js et Tailwind CSS, inspiré d’un modèle sur Dribbble." ,
     "imageUrl": "/images/projects/hercules-acad.png",
@@ -16,7 +24,16 @@
     "githubUrl": "https://github.com/Omargazzah02/Hercules-Academy"
   },
     {
-    "id": 2,
+    "id": 3,
+    "title": "Aquarhône",
+    "description": "Application web full stack pour gérer les réservations d’une agence de tourisme, développée avec Next.js, Node.js et MySQL, sécurisée et performante." ,
+    "imageUrl": "/images/projects/aquarhone-logo.png",
+   
+    "githubUrl": "https://github.com/Omargazzah02/aquarhone"
+  },
+
+   {
+    "id": 4,
     "title": "Frameup",
     "description": "Portfolio d’un photographe professionnel, développé avec Next.js." ,
     "imageUrl": "/images/projects/frameup.png",
@@ -24,5 +41,13 @@
     "githubUrl": "https://github.com/Omargazzah02/frameup-portfolio"
   }
 
+
+
+
+
+
+
+
+   
 ]
 
