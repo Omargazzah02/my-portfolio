@@ -3,7 +3,7 @@
 
   <div  class="flex flex-wrap items-center justify-center gap-8 w-full " >
 
-    <div class=' border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
+    <div class=' border-4 max-lg:border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
 <span class="flex gap-5 items-center">
         <h1 class="text-2xl  font-bold text-white   drop-shadow-lg max-lg:text-xl ">Conception </h1>     <font-awesome-icon :icon="['fas', 'pencil']"  class="text-white text-2xl max-lg:text-xl "  />
 
@@ -20,7 +20,7 @@
 
 
     
-    <div class=' border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
+    <div class=' border-4 max-lg:border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
 <span class="flex gap-5 items-center">
         <h1 class="text-2xl max-lg:text-xl font-bold text-white   drop-shadow-lg ">Développement </h1>     <font-awesome-icon :icon="['fas', 'code']"  class="text-white text-2xl max-lg:text-xl" />
 
@@ -37,7 +37,7 @@
 
 
 
-       <div class=' border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
+       <div class=' border-4 max-lg:border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
 <span class="flex gap-5 items-center">
         <h1 class="text-2xl max-lg:text-xl font-bold text-white   drop-shadow-lg">Design (UI/UX)  </h1>     <font-awesome-icon :icon="['fas', 'palette']"  class="text-white text-2xl max-lg:text-xl" />
 
@@ -52,7 +52,7 @@
     </div>
 
 
-        <div class=' border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
+        <div class=' border-4 max-lg:border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96 h-72 p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
 <span class="flex gap-5 items-center" >
         <h1 class="text-2xl max-lg:text-xl font-bold text-white   drop-shadow-lg">DevOps et CI/CD  </h1>     <font-awesome-icon :icon="['fas', 'cogs']" class="text-white text-2xl max-lg:text-xl" />
 
@@ -72,7 +72,7 @@
 
     
 
-        <div class=' border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96  p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
+        <div class=' border-4 max-lg:border-2 border-[var(--primary-color)]  bg-[var(--blue-dark-color)] w-96  p-6 flex flex-col gap-4 text-white rounded-2xl max-lg:w-full max-lg:h-full'>
 <span class="flex gap-5 items-center">
         <h1 class="text-2xl max-lg:text-xl font-bold text-white   drop-shadow-lg">Tests  </h1>     <font-awesome-icon :icon="['fas', 'bug']" class="text-white text-2xl max-lg:text-xl" />
 
