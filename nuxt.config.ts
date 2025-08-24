@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     head:{
       title :'Mon Portfolio',
        link: [
-        { rel: 'icon', type: 'image/png', href: '/images/photo-omar.png' }
+        { rel: 'icon', type: 'image/png', href: '/images/icon-dev.png' }
       ]
     }
 
