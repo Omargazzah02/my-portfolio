@@ -45,7 +45,7 @@
     {
     "id": 5,
     "title": "OWASP Juice Shop",
-    "description": "Reproduire le site OWASP Juice Shop dans une nouvelle application entièrement sécurisée en appliquant les contre-mesures aux vulnérabilités de l’OWASP Top 10, en utilisant Next.js et Node.js." ,
+    "description": "Recréer OWASP Juice Shop en une application neuve et sécurisée, en corrigeant les principales failles de sécurité reconnues (liste OWASP Top 10), avec Next.js et Node.js." ,
     "imageUrl": "/images/projects/juice-shop.png",
     "githubUrl": "https://github.com/Omargazzah02/owasp-juice.shop"
   }

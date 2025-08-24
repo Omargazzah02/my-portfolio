@@ -1,6 +1,6 @@
 <template>
   <nav class="flex justify-center p-4">
-   <span class="flex   max-lg:flex-col   items-center max-lg:gap-9   ">
+   <span class="flex   max-lg:flex-col   items-center   ">
      <h1 class="text-white font-bold text-3xl sm:text-4xl text-center">
       Mon <span class="text-[var(--primary-color)]">Portfolio</span>
 
@@ -31,7 +31,7 @@
     </div>
 
     <!-- Colonne droite (image) -->
-    <div class="mt-8 lg:mt-0  max-lg:w-64 w-[400px]">
+    <div class=" -mt-20  max-lg:w-64 w-[400px]">
       <img src="/images/photo-omar.png" alt="Photo Omar" class="w-full"/>
     </div>
   </div>

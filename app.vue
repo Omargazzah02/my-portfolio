@@ -11,11 +11,18 @@
 
        <AboutMePage></AboutMePage>
 
+
+
       <ProjectsPage
       ></ProjectsPage>
 
+             <WhatICanDoPage></WhatICanDoPage>
+
+
 
       <SkillsPage></SkillsPage>
+
+      
 
       <ContactPage></ContactPage>
 

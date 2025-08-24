@@ -6,6 +6,7 @@
     --primary-color-hover :#5dd4ff;
     --secondary-color : #4b4645;
     --yellow-color  : #FFDA0B;
+    --blue-dark-color : #1F1B1A;
   --border-gradient: linear-gradient(to right, #0098CF, #000000); /* Exemple dégradé */
 
     
@@ -92,7 +93,7 @@ a:hover{
   color: white;
   font-weight: bold;
   margin-bottom: 30px;
-  font-size: 25px; /* taille par défaut pour mobile */
+  font-size: 22px; /* taille par défaut pour mobile */
 }
 
 .title {

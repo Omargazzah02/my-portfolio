@@ -13,15 +13,16 @@
     <!-- Contenu -->
     <div class="absolute bottom-0 p-5 w-full flex flex-col justify-end">
       <!-- Titre -->
-      <h1 class="text-2xl max-lg:text-xl font-bold text-white truncate drop-shadow-lg" :title="title">
+      <h1 class="text-2xl max-lg:text-xl font-bold text-white drop-shadow-lg">
         {{ title }}
       </h1>
 
       <!-- Description -->
       <p
         ref="descRef"
-        class="text-white text-xs mt-2 overflow-hidden transition-all duration-500"
-        :style="{ maxHeight: expanded ? '24rem' : '3rem' }"
+        class="text-white text-xs mt-2 transition-all duration-500"
+        :class="expanded ? 'line-clamp-none' : 'line-clamp-2'"
+        :style="!expanded ? clampStyle : {}"
       >
         {{ description }}
       </p>
@@ -37,11 +38,21 @@
 
       <!-- Icônes d'action -->
       <div class="mt-3 flex space-x-4">
-        <a v-if="viewUrl" :href="viewUrl" target="_blank" class="text-white hover:text-blue-400 transition-colors duration-300">
+        <a
+          v-if="viewUrl"
+          :href="viewUrl"
+          target="_blank"
+          class="text-white hover:text-blue-400 transition-colors duration-300"
+        >
           <font-awesome-icon :icon="['fas', 'eye']" class="text-2xl" />
         </a>
 
-        <a v-if="githubUrl" :href="githubUrl" target="_blank" class="text-white hover:text-blue-400 transition-colors duration-300">
+        <a
+          v-if="githubUrl"
+          :href="githubUrl"
+          target="_blank"
+          class="text-white hover:text-blue-400 transition-colors duration-300"
+        >
           <font-awesome-icon :icon="['fab', 'github']" class="text-2xl" />
         </a>
       </div>
@@ -64,14 +75,20 @@ const expanded = ref(false)
 const showToggle = ref(false)
 const descRef = ref(null)
 
-// Limite initiale en px correspondant à max-h-12 (~3rem)
-const INITIAL_MAX_HEIGHT = 48
+// CSS clamp pour 2 lignes
+const clampStyle = {
+  display: '-webkit-box',
+  WebkitLineClamp: '2',
+  WebkitBoxOrient: 'vertical',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+}
 
 onMounted(async () => {
   await nextTick()
   if (descRef.value) {
-    // Vérifie si le contenu dépasse la limite initiale
-    showToggle.value = descRef.value.scrollHeight > INITIAL_MAX_HEIGHT
+    // Le bouton "Lire plus" apparaît seulement si le texte dépasse 2 lignes
+    showToggle.value = descRef.value.scrollHeight > descRef.value.clientHeight
   }
 })
 </script>
