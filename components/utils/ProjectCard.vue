@@ -1,10 +1,10 @@
 <template>
-  <div class="relative w-full min-h-[300px] overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-500">
+  <div class="relative w-full min-h-[300px] overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-500 border-2 border-[var(--secondary-color)]">
     <!-- Image -->
     <img
       :src="imageUrl"
       alt=""
-      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+      class="w-full h-full  transition-transform duration-700 group-hover:scale-110 max-lg: object-cover"
     />
 
     <!-- Gradient Overlay -->
