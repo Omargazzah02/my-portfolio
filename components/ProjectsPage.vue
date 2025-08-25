@@ -2,7 +2,11 @@
  <div class="lg:px-5">
    <h1 class="title-bold text-center "> Mes projets</h1>
 
-   
+  <span class="text-white flex flex-row items-center text-sm mb-4 ml-4">
+       <img src="/images/scroll.png" loading="lazy"  class=" w-10"></img>
+       Scroll left
+
+  </span>   
   <swiper
     :modules="[Pagination]"
     pagination
