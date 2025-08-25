@@ -4,7 +4,7 @@
     <img
       :src="imageUrl"
       alt=""
-      class="w-full h-full  transition-transform duration-700 group-hover:scale-110 max-lg: object-cover"
+      class="w-full h-full  transition-transform duration-700 group-hover:scale-110 max-lg:object-cover"
     />
 
     <!-- Gradient Overlay -->
