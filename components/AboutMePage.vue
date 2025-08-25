@@ -4,7 +4,7 @@
 
 <template>
     <section class="w-full flex items-center lg:space-x-10  " >
-        <div  > <img src="/images/developer.png" alt="" width="450" class=" max-lg:hidden"></div>
+        <div  > <img src="/images/developer.png" alt="" width="450" class=" max-lg:hidden" loading="lazy"></div>
        
         <div class='flex-1 flex flex-col space-y-5 lg:px-16 '>
 

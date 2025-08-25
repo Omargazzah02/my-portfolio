@@ -5,7 +5,7 @@
       Mon <span class="text-[var(--primary-color)]">Portfolio</span>
 
     </h1>
-    <img src="/public/images/starts.webp" alt="" class=' w-20 max-lg:w-16 max-lg:hidden'>
+    <img src="/public/images/starts.webp" alt="" class=' w-20 max-lg:w-16 max-lg:hidden' loading="lazy">
    </span>
   </nav>
 
@@ -17,7 +17,7 @@
       
 
             <div>
-              <img src="/public/images/rectangle.png" alt="" class=" h-28 max-lg:hidden">
+              <img src="/public/images/rectangle.png" alt="" class=" h-28 max-lg:hidden" loading="lazy">
             </div>
 
 
@@ -32,7 +32,7 @@
 
     <!-- Colonne droite (image) -->
     <div class=" -mt-20  max-lg:w-64 w-[400px]">
-      <img src="/images/photo-omar.png" alt="Photo Omar" class="w-full"/>
+      <img src="/images/photo-omar.png" alt="Photo Omar" class="w-full" loading="lazy"/>
     </div>
   </div>
 </template>
