@@ -62,6 +62,14 @@
     "viewUrl" : "https://drive.google.com/file/d/1rgX2-bvB8PCGfgr_h0o6MCzUNmNmQtfa/view"
   }
 
+  , {
+    "id": 7,
+    "title": "Syndico",
+    "description": "Une partie back-end développée avec Python et Django, pour une plateforme permettant la gestion financière et administrative entre les copropriétaires d’un immeuble. " ,
+    "imageUrl": "/images/projects/syndico.png",
+    "githubUrl": "https://github.com/Omargazzah02/Syndico-Backend"
+  }
+
 
 
 
