@@ -52,6 +52,23 @@
 
 
 
+,
+    {
+    "id": 6,
+    "title": "Findme",
+    "description": "Une application mobile sécurisée destinée aux conducteurs de véhicules électriques, développée pour l’entreprise Tunisie Télécom, en utilisant Spring Boot, Flutter et MySQL." ,
+    "imageUrl": "/images/projects/findme.jpg",
+    "githubUrl": "https://github.com/Omargazzah02/findme",
+    "viewUrl" : "https://drive.google.com/file/d/1rgX2-bvB8PCGfgr_h0o6MCzUNmNmQtfa/view"
+  }
+
+
+
+
+
+
+
+
 
 
 
